@@ -4,13 +4,13 @@
 class MakeCli < Formula
   desc "A command-line tool for Make automation platform"
   homepage "https://www.make.com"
-  version "1.3.1"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/integromat/make-cli/releases/download/v#{version}/make-cli-darwin-arm64.tar.gz"
-      sha256 "36a39e0743deca7b779123a84ecc263df325be0ed5b47a870a563acbe80f47a3"
+      sha256 "fd0316807f73c3640a89d747dd3b8e022fd651562a829c9f958ec469201bf742"
 
       def install
         bin.install "make-cli-darwin-arm64" => "make-cli"
@@ -19,7 +19,7 @@ class MakeCli < Formula
 
     on_intel do
       url "https://github.com/integromat/make-cli/releases/download/v#{version}/make-cli-darwin-amd64.tar.gz"
-      sha256 "7562736f6eaa2937aeee3acd9410f0b96b5589d116a692b76ce1af61b8ac4d8f"
+      sha256 "8a9bb29fc7efae38f2ce70b4abbbb6cf293244faba445c9810f1f9cffb1cc1bd"
 
       def install
         bin.install "make-cli-darwin-amd64" => "make-cli"
@@ -30,7 +30,7 @@ class MakeCli < Formula
   on_linux do
     on_arm do
       url "https://github.com/integromat/make-cli/releases/download/v#{version}/make-cli-linux-arm64.tar.gz"
-      sha256 "a2dae5d37b3153aff97405e06c7936fd7d008ff1a0a876fa5f7d234148f33072"
+      sha256 "f6e5030df6a069278868cdfc8e43c6730ddf11d1f8d3babf5095175808bfabcf"
 
       def install
         bin.install "make-cli-linux-arm64" => "make-cli"
@@ -39,7 +39,7 @@ class MakeCli < Formula
 
     on_intel do
       url "https://github.com/integromat/make-cli/releases/download/v#{version}/make-cli-linux-amd64.tar.gz"
-      sha256 "3bb7de01e3f4a01c2fdbb2d421c728a5848e25d60562abbbe3ea1efa45d6c11b"
+      sha256 "ca0ef36dffdb3afd94bbdd85b6a24ab70d9a5d8705a1955b1b1603e4cca9a9bd"
 
       def install
         bin.install "make-cli-linux-amd64" => "make-cli"
